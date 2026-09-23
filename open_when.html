@@ -2231,6 +2231,110 @@ And I hope, whenever you read this, you never forget just how much you mean to m
             2500
         );
 
+        /* ==========================================
+   OPENING BACKGROUND MUSIC
+========================================== */
+
+const openingMusic =
+    new Audio("music/Goodness of God - piano instrumental cover with lyrics.mp3");
+
+
+openingMusic.loop = true;
+
+openingMusic.volume = 0.25;
+
+
+/* ==========================================
+   FADE OPENING MUSIC
+========================================== */
+
+function fadeOutOpeningMusic() {
+
+    const fade =
+        setInterval(function() {
+
+            if (
+                openingMusic.volume > 0.03
+            ) {
+
+                openingMusic.volume -= 0.03;
+
+            }
+
+            else {
+
+                openingMusic.volume = 0;
+
+                openingMusic.pause();
+
+                openingMusic.currentTime = 0;
+
+                clearInterval(fade);
+
+            }
+
+        }, 100);
+
+}
+
+
+/* ==========================================
+   START OPENING MUSIC
+========================================== */
+
+function startOpeningMusic() {
+
+    openingMusic.volume = 0.25;
+
+    openingMusic.play().catch(
+        function() {
+
+            console.log(
+                "Music will start after user interaction."
+            );
+
+        }
+    );
+
+}
+
+
+/* ==========================================
+   START MUSIC AFTER FIRST INTERACTION
+========================================== */
+
+document.addEventListener(
+    "click",
+    function startMusicOnce() {
+
+        startOpeningMusic();
+
+        document.removeEventListener(
+            "click",
+            startMusicOnce
+        );
+
+    },
+    { once: true }
+);
+
+
+/* ==========================================
+   MODIFY OPEN LETTER
+========================================== */
+
+const originalOpenLetter =
+    window.openLetter;
+
+
+window.openLetter =
+    function(id) {
+
+        fadeOutOpeningMusic();
+
+        originalOpenLetter(id);
+
+    };
 
     </script>
 
