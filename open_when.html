@@ -1278,1064 +1278,658 @@
 
     <script>
 
+/* =========================================================
+   LETTER DATA
+========================================================= */
 
-        /* ==========================================
-           LETTER CONTENT
-        ========================================== */
+const letters = {
 
-        const letters = {
+    "bad-day": {
+        icon: "🌧️",
+        small: "Open when you're having a bad day",
+        title: "For the days that feel heavy",
+        message: `Hey love,
 
+I know some days just feel heavier than others. Days when everything feels like too much, when you're tired, frustrated, or just not feeling like yourself.
 
-            "bad-day": {
+If I could, I'd be right there beside you right now. I'd hold you close, kiss your forehead, and remind you that you don't have to carry everything alone.
 
-                icon: "💌",
+I wish I could take away every bad feeling, every worry, and every moment that makes you feel like giving up. If giving you everything I have meant seeing you happy and at peace, I would do it without thinking twice.
 
-                small:
-                    "For the difficult days",
+Please remember that even on the days when you don't feel strong, you are still strong. Even when you don't see how things will work out, God is still working.
 
-                title:
-                    "Open when you're having a bad day",
+I'm praying for you. I'm praying that God gives you peace when your mind feels overwhelmed, strength when you feel tired, and comfort when you need it most.
 
-                message:
-`Hey, my love.
-
-I know today might not be going the way you wanted it to.
-
-Maybe you're tired.
-Maybe you're frustrated.
-Maybe your heart just needs a break from everything for a little while.
-
-So before anything else, I want you to breathe.
-
-You don't have to figure everything out tonight.
-
-You don't have to pretend you're okay if you're not.
-
-And you don't have to carry everything by yourself.
-
-If I could be there with you right now, I wouldn't ask you to explain anything.
-
-I wouldn't tell you to stop being sad.
-
-I wouldn't tell you to just forget about whatever is bothering you.
-
-I'd just pull you into my arms.
-
-I'd hold you as tightly as I could.
-
-I'd let you rest your head against me and stay there for as long as you needed.
-
-I'd kiss your forehead.
-
-Then your cheeks.
-
-Then I'd probably give you a hundred little kisses just because I could. ❤️
-
-And I'd remind you, over and over again...
-
-**You are loved.**
-
-I'd tell you how much you mean to me.
-
-I'd tell you that you don't have to face everything alone.
-
-I'd tell you that whatever is hurting right now won't last forever.
-
-And if I could take away whatever is making you feel this way, I honestly would.
-
-I'd give you everything I have if it meant seeing you happy and at peace.
-
-My time.
-
-My energy.
-
-My comfort.
-
-My heart.
-
-Everything.
-
-Because that's how much I love you.
-
-I wish I could be there right now.
-
-I wish I could hold you until your breathing became calm again.
-
-I wish I could wipe away every tear, kiss your forehead, and whisper in your ear that everything is going to be okay.
-
-But since I can't physically be there...
-
-I hope these words can reach you instead.
-
-And I hope you remember that even when you don't feel strong, you don't have to be.
-
-You can have bad days.
-
-You can be tired.
-
-You can cry.
-
-You can feel overwhelmed.
-
-You can simply exist and take your time finding your way back to yourself.
-
-God is with you through all of it.
-
-And so am I.
-
-I pray He gives you the peace your heart needs tonight.
-
-I pray He protects you, gives you strength, and reminds you that there are people who love you deeply.
-
-And I hope you never forget that I am one of them.
-
-So tonight, my love...
-
-Let the world wait.
-
-Let yourself rest.
-
-Close your eyes and imagine my arms around you.
-
-Imagine me holding you close, kissing your forehead, and whispering the words I'd say if I were right there beside you:
-
-**I love you.**
-
-More than you know.
-
-More than I could ever put into words.
-
-And no matter how difficult today was...
-
-Tomorrow is another chance to smile.
-
-Until then, just rest.
-
-I've got you. ❤️
-`,
-
-                photo: "",
-
-                song: "music/Lauren Daigle - You Say (Lyrics).mp3"
-
-            },
-
-
-            "cant-sleep": {
-
-                icon: "🌙",
-
-                small:
-                    "For the quiet hours",
-
-                title:
-                    "Open when you can't sleep",
-
-                message:
-`It’s late now.
-
-The world is quiet, the day is finally coming to an end, and I know sometimes that’s when our minds decide to become the loudest.
-
-So tonight, I hope you let yourself breathe.
-
-You don’t have to worry about tomorrow yet.
-You don’t have to carry everything that happened today.
-You don’t have to have all the answers.
-
-Just close your eyes and let yourself rest.
-
-And while you do, I hope you remember that God is watching over you tonight. I pray He keeps you safe, gives your heart peace, eases anything that may be weighing on your mind, and reminds you that you are never alone.
-
-If I could, I’d be there beside you right now, just holding you close and reminding you that everything is going to be okay.
-
-And if your mind is still awake after all of that, then I hope you remember one more thing...
-
-You are loved.
-
-You are cared for.
-
-And you mean more to me than I could ever put into words.
-
-I love you, more than a simple “goodnight” could ever explain. ❤️
-
-So let tonight be gentle with you.
-
-Give your worries to God.
-Let your heart be still.
-Let tomorrow wait.
-
-Close your eyes, my love.
-
-Rest knowing that somewhere, someone is thinking about you, praying for you, and loving you with all their heart.
-
-Goodnight, beautiful.
-May God watch over you tonight and give you the sweetest dreams.
-
-I love you. ❤️
-
-🌙`,
-
-                photo: "",
-
-                song: "music/CeCe Winans - Goodness of God (Official Video).mp3"
-
-            },
-
-
-            "smile": {
-
-                icon: "😊",
-
-                small:
-                    "Emergency happiness",
-
-                title:
-                    "Open when you need to smile",
-
-                message:
-`Okay.
-
-Enough of the serious stuff for a minute.
-
-First things first...
-
-Smile.
-
-Yes, you.
-
-Right now.
-
-I’m serious. 😂
-
-Come on...
-
-Just a little one.
-
-I’ll wait.
-
-...
-
-See?
-
-There she is. ❤️
-
-And if that didn’t work, then think about one of those completely ridiculous moments that somehow had us laughing way harder than we should have.
-
-You know the ones.
-
-The moments that probably wouldn’t make sense to anyone else, but somehow became our kind of funny.
-
-And if that still didn’t make you smile...
-
-Then just imagine me standing in front of you right now, doing absolutely everything I can to make you laugh.
-
-Probably failing miserably.
-
-Probably making a complete fool of myself.
-
-And somehow making the situation even worse. 😂
-
-But I’d keep trying.
-
-Because seeing you smile is worth looking stupid for.
-
-And honestly...
-
-I love your smile.
-
-I love the little moments when you laugh without trying.
-
-I love knowing that, even for a second, I can make your day a little lighter.
-
-So if today wasn't kind to you, let me remind you of something:
-
-You are loved.
-
-You are precious to me.
-
-And no matter how bad the day gets, I’ll always want to be one of the reasons you smile again.
-
-Now...
-
-One more time.
-
-Smile for me. ❤️
-
-There.
-
-Much better.
-
-😊❤️`,
-
-                photo: "",
-
-                song: "music/I Thank God + JWLKRS Worship feat. Blake Wiggins and Ryan Ellis _ Housefires (Official Video).mp3"
-
-            },
-
-
-            "miss-me": {
-
-                icon: "🥺",
-
-                small:
-                    "For when distance feels bigger",
-
-                title:
-                    "Open when you miss me",
-
-                message:
-`If you’re reading this because you miss me...
-
-Then I hope you know that, wherever I am, there’s a very good chance I’m missing you too.
-
-Sometimes I wish I could just appear beside you.
-
-No explanation.
-No big conversation.
-No need to say anything at all.
-
-I’d just sit next to you, pull you close, and stay there for a little while.
-
-Because sometimes you don’t need words when all you really want is the person you miss.
-
-Until I can be there, keep this little piece of me with you.
-
-Close your eyes for a moment and think about us.
-
-Think about one of those memories that still makes you smile.
-
-Think about something completely stupid that made us laugh.
-
-Think about a moment you wish you could freeze in time and experience all over again.
-
-I know distance can make someone feel far away...
-
-But it doesn't erase the memories.
-
-It doesn't erase the laughter.
-
-It doesn't erase the little moments that became important without us even realizing it.
-
-And it definitely doesn't erase you from my thoughts.
-
-You’re there more often than you probably know.
-
-In the quiet moments.
-
-In the songs I hear.
-
-In the random little things that remind me of you.
-
-And sometimes, especially when I miss you the most, I find myself wishing I could close the distance between us with nothing more than a hug.
-
-So if tonight you’re missing me...
-
-Just remember that you’re not missing alone.
-
-I miss you too.
-
-And until I can be there beside you again, I hope you carry this with you:
-
-No matter how many miles are between us, you still have a place in my heart that distance could never reach.
-
-I love you. ❤️
-`,
-
-                photo: "",
-
-                song: "music/Lauren Daigle - Rescue (Official Music Video).mp3"
-
-            },
-
-
-            "good-news": {
-
-                icon: "🎉",
-
-                small:
-                    "Something worth celebrating",
-
-                title:
-                    "Open when something good happens",
-
-                message:
-`WAIT.
-
-Something good happened?!
-
-Then forget everything else for a second.
-
-This letter has only one job...
-
-**CELEBRATE YOU.** 🎉❤️
-
-I don’t care how big or small it seems.
-
-If it made you smile,
-if it made your heart feel a little lighter,
-if it gave you even a tiny moment of happiness...
-
-Then it matters.
-
-And I hope you take a moment to really enjoy it.
-
-Don’t immediately move on to the next thing.
-
-Don’t downplay it.
-
-Don’t tell yourself it wasn't a big deal.
-
-Let yourself be happy.
-
-Be proud of yourself.
-
-Because I’m proud of you too.
-
-And if I could be there right now, I’d probably be making way too much noise, celebrating like you just accomplished the greatest thing in the world. 😂
-
-I’d be smiling at you, telling you how proud I am, and probably finding some excuse to give you a big hug and kiss.
-
-So for now, imagine me right there beside you...
-
-Cheering for you.
-
-Clapping for you.
-
-Probably embarrassing you a little. 😂
-
-But most importantly, reminding you that you deserve moments like this.
-
-You deserve happiness.
-
-You deserve good news.
-
-You deserve things that make your heart feel full.
-
-And I pray that God keeps bringing more of those moments into your life.
-
-More reasons to smile.
-
-More dreams that come true.
-
-More little victories that make you stop and think, *“Maybe things really are going to be okay.”*
-
-And when those good things come...
-
-I hope you let yourself celebrate every single one.
-
-Because I’ll always be here, cheering you on.
-
-I love seeing you happy.
-
-And honestly?
-
-Seeing you happy makes me happy too. ❤️
-
-So go enjoy your moment.
-
-You earned it.
-
-Now...
-
-**CELEBRATE, BEAUTIFUL.** 🎉❤️
-`,
-
-                photo: "",
-
-                song: "music/The Blessing _ Kari Jobe _ Elevation Worship [LYRICS].mp3"
-
-            },
-
-
-            "mean-to-me": {
-
-                icon: "❤️",
-
-                small:
-                    "The one I really wanted you to read",
-
-                title:
-                    "Open when you need to know how much you mean to me",
-
-                message:
-`I don't know if I tell you this enough.
-
-But you matter to me.
-
-Not a little.
-
-Not just when things are good.
-
-You matter to me **so much more than I probably know how to explain.**
-
-And I don't love you because you're perfect.
-
-I don't love you because you always know what to say.
-
-I don't love you because you have to prove anything to me.
-
-I love you because you're you.
-
-Because somehow, out of all the people I could have met in this life, God allowed our paths to cross.
-
-And honestly...
-
-I thank Him for that more than you probably realize.
-
-I thank God for bringing you into my life.
-
-For the conversations.
-
-For the laughter.
-
-For the memories.
-
-For the little moments that probably seemed ordinary at the time but somehow became some of my favorite memories.
-
-But most of all...
-
-I thank Him for you being there when I wasn't at my best.
-
-There were nights when I wasn't myself.
-
-Nights when my mind was a mess.
-
-Nights when I was completely overwhelmed, exhausted, frustrated, or just not okay.
-
-And somehow, you stayed.
-
-You stayed up late with me.
-
-You listened to me.
-
-You gave me your time when you could have been sleeping.
-
-You sat through the parts of me that weren't easy to deal with.
-
-You saw me at some of my worst moments...
-
-and you didn't make me feel like I was too much.
-
-You didn't have to do that.
-
-You could have walked away.
-
-You could have said you were tired.
-
-You could have decided that my problems weren't yours to carry.
-
-But you stayed.
-
-And I don't think I'll ever be able to properly explain how much that meant to me.
-
-So thank you.
-
-Thank you for every late night.
-
-Thank you for every conversation that lasted longer than it was supposed to.
-
-Thank you for every time you listened when I didn't even know how to explain what I was feeling.
-
-Thank you for making me laugh when I didn't feel like smiling.
-
-Thank you for being patient with me.
-
-Thank you for seeing the person underneath all the mess.
-
-And thank you for loving parts of me that I sometimes struggle to love myself.
-
-You have become part of my memories, my thoughts, my stories...
-
-but you're more than that now.
-
-You're part of my heart.
-
-You've made ordinary days feel different simply by being in them.
-
-You've given me memories I wouldn't trade for anything.
-
-You've made me laugh until my face hurt.
-
-You've given me moments I'll probably remember for the rest of my life.
-
-And somewhere along the way, without me even realizing it...
-
-you became someone I never want to imagine my life without.
-
-So if you ever have a day where you question whether you're important...
-
-come back here.
-
-Read this again.
-
-If you ever wonder whether your presence makes a difference...
-
-read this again.
-
-If you ever wonder whether someone appreciates all those little things you do...
-
-please read this again.
-
-Because I notice them.
-
-I remember them.
-
-And I carry them with me.
-
-You are precious to me.
-
-More than these words can hold.
-
-More than I could fit into a thousand letters.
-
-And if I could give you one thing, it would be the ability to see yourself through my eyes for just a moment.
-
-Maybe then you'd understand why I thank God for letting our paths cross.
-
-Maybe then you'd understand why your smile means so much to me.
-
-Maybe then you'd understand why those late nights, those conversations, those little memories, and all those moments with you mean more to me than I can explain.
+And whenever you need someone, I'm here.
 
 I love you.
 
-I love you for who you are.
+I've got you. ❤️`,
 
-I love you for who you are becoming.
+        photo: "images/img2.jpeg",
+        song: "music/Lauren Daigle - You Say (Lyrics).mp3"
+    },
 
-I love you on your good days and your difficult ones.
 
-And I love you for all the little pieces of yourself that you've trusted me enough to share.
+    "cant-sleep": {
+        icon: "🌙",
+        small: "Open when you can't sleep",
+        title: "For the nights when sleep won't come",
+        message: `Hey love,
 
-I don't know what God has planned for our story.
+If you're reading this late at night, take a deep breath for me.
 
-But I know I'm grateful that you're in it.
+Whatever is running through your mind right now, you don't have to solve everything tonight.
 
-And if I could go back and choose all over again...
+Close your eyes, breathe slowly, and let yourself rest.
 
-I'd still choose the moment our paths crossed.
+God is watching over you tonight. He knows every thought you're having, every worry you're carrying, and every thing you're afraid of.
 
-I'd still choose every late-night conversation.
+I'm praying that He gives you peace tonight. That He quiets your mind, calms your heart, and reminds you that everything will be okay.
 
-I'd still choose every laugh.
+I wish I could be there beside you, holding you until you fall asleep.
 
-I'd still choose every memory.
+So for now, just imagine that I am.
+
+Goodnight, beautiful.
+
+I love you. ❤️`,
+
+        photo: "images/img3.jpeg",
+        song: "music/CeCe Winans - Goodness of God (Official Video).mp3"
+    },
+
+
+    "smile": {
+        icon: "😊",
+        small: "Open when you need to smile",
+        title: "I just wanted to see you smile",
+        message: `Hey you,
+
+Yes, you.
+
+Smile. 😌
+
+I don't care what happened today. Just give me one.
+
+You have no idea how much I love seeing you smile. It's one of those little things about you that can completely change my mood.
+
+I still think about all the silly moments, the random conversations, the jokes that probably weren't even funny, and all the times we somehow ended up laughing at the most ridiculous things.
+
+Those are some of my favorite memories.
+
+And honestly, I hope I can always be one of the reasons you smile.
+
+So whatever you're doing right now...
+
+Stop.
+
+Smile.
+
+There you go. ❤️
+
+I love that smile.`,
+
+        photo: "images/img4.jpeg",
+        song: "music/I Thank God + JWLKRS Worship feat. Blake Wiggins and Ryan Ellis _ Housefires (Official Video).mp3"
+    },
+
+
+    "miss-me": {
+        icon: "💌",
+        small: "Open when you miss me",
+        title: "If you miss me...",
+        message: `Hey love,
+
+If you're opening this because you miss me, just know that I probably miss you too.
+
+There are so many moments when I wish I could just appear beside you.
+
+No warning.
+
+No plans.
+
+Just me showing up so I could hold you for a little while.
+
+Sometimes I wish distance didn't exist. I wish I could reach through the phone and hug you whenever I wanted.
+
+But even when we're apart, you're still constantly somewhere in my thoughts.
+
+I'll randomly remember something you said.
+
+I'll think about your smile.
+
+I'll remember a conversation we had.
+
+And suddenly I miss you all over again.
+
+But I hope you remember something.
+
+Distance doesn't erase someone you love.
+
+You're still here.
+
+In my thoughts.
+
+In my prayers.
+
+And in my heart.
+
+Until I can hold you again, just know that you're loved.
+
+Very, very much.
+
+I love you. ❤️`,
+
+        photo: "images/img5.jpeg",
+        song: "music/Lauren Daigle - Rescue (Official Music Video).mp3"
+    },
+
+
+    "good-news": {
+        icon: "🎉",
+        small: "Open when something good happens",
+        title: "I want to celebrate with you",
+        message: `Hey love,
+
+Something good happened.
+
+And if you're reading this, I already know one thing...
+
+I'm proud of you.
+
+Whatever happened, big or small, I hope you take a moment to appreciate yourself.
+
+You deserve to celebrate the good moments.
+
+I love seeing you happy.
+
+I love seeing you excited.
+
+And I love seeing you accomplish the things you work so hard for.
+
+Never forget how capable you are.
+
+And I believe God has so many more good moments waiting for you.
+
+So celebrate this one.
+
+Enjoy it.
+
+Smile.
+
+And know that somewhere, someone is cheering for you.
+
+That someone is me. ❤️
+
+I'm always going to be proud of you.`,
+
+        photo: "images/img6.jpeg",
+        song: "music/The Blessing _ Kari Jobe _ Elevation Worship [LYRICS].mp3"
+    },
+
+
+    "mean-to-me": {
+        icon: "❤️",
+        small: "Open when you wonder what you mean to me",
+        title: "What you mean to me",
+        message: `Hey love,
+
+I don't know if I tell you this enough, but you mean so much to me.
+
+I love you. A lot.
+
+And sometimes I honestly don't know how to put into words how grateful I am that you came into my life.
+
+I thank God for letting our paths cross.
+
+Out of all the people I could have met, somehow He allowed me to find you.
+
+And I'm so thankful He did.
+
+I also want you to know that I haven't forgotten the times you were there for me.
+
+Especially those nights when I wasn't okay.
+
+Those late nights when you stayed up with me when I was at my worst.
+
+You didn't have to.
+
+You could have gone to sleep.
+
+You could have walked away.
+
+But you stayed.
+
+You listened.
+
+You were there.
+
+And I will always carry that with me.
+
+You have been a source of comfort in moments when I really needed someone.
+
+And I hope you know that I want to be that person for you too.
+
+When you're happy, I want to celebrate with you.
+
+When you're hurting, I want to hold you.
+
+When you're scared, I want to remind you that you're not alone.
+
+And when life gets difficult, I want you to know that I'm still here.
 
 I'd still choose you.
 
-And I'll always be thankful that, somehow, God let me find you.
+And I'd choose you again.
 
-I love you more than I probably say.
+I'm thankful for you.
 
-And I hope, whenever you read this, you never forget just how much you mean to me. ❤️
-`,
+I'm thankful for every conversation, every laugh, every late night, every memory, and every little moment we've shared.
 
-                photo: "",
+Most of all, I'm thankful that God allowed me to find you.
 
-                song: "music/Jireh - Elevation Worship & Maverick City (Lyrics).mp3"
+I love you more than I probably know how to explain.
 
-            }
+Thank you for being you.
 
+And thank you for being there for me. ❤️`,
 
-        };
+        photo: "images/img7.jpeg",
+        song: "music/Jireh - Elevation Worship & Maverick City (Lyrics).mp3"
+    }
 
+};
 
-        /* ==========================================
-           OPEN LETTER
-        ========================================== */
 
-        function openLetter(id) {
+/* =========================================================
+   ELEMENTS
+========================================================= */
 
+const overlay = document.getElementById("overlay");
+const songPlayer = document.getElementById("songPlayer");
+const songBox = document.getElementById("songBox");
 
-            const letter =
-                letters[id];
 
-
-            if (!letter) {
-
-                return;
-
-            }
-
-
-            /* Set icon */
-
-            document.getElementById(
-                "letterIcon"
-            ).textContent =
-                letter.icon;
-
-
-            /* Set small heading */
-
-            document.getElementById(
-                "letterSmall"
-            ).textContent =
-                letter.small;
-
-
-            /* Set title */
-
-            document.getElementById(
-                "letterTitle"
-            ).textContent =
-                letter.title;
-
-
-            /* Set message */
-
-            document.getElementById(
-                "letterMessage"
-            ).textContent =
-                letter.message;
-
-
-            /* ======================================
-               PHOTO
-            ====================================== */
-
-            const photo =
-                document.getElementById(
-                    "memoryPhoto"
-                );
-
-
-            if (letter.photo) {
-
-                photo.src =
-                    letter.photo;
-
-                photo.classList.add(
-                    "visible"
-                );
-
-            }
-
-            else {
-
-                photo.src = "";
-
-                photo.classList.remove(
-                    "visible"
-                );
-
-            }
-
-
-            /* ======================================
-               SONG
-            ====================================== */
-
-            const songBox =
-                document.getElementById(
-                    "songBox"
-                );
-
-
-            const songPlayer =
-                document.getElementById(
-                    "songPlayer"
-                );
-
-
-            if (letter.song) {
-
-                songPlayer.src =
-                    letter.song;
-
-                songBox.classList.add(
-                    "visible"
-                );
-
-            }
-
-            else {
-
-                songPlayer.pause();
-
-                songPlayer.src = "";
-
-                songBox.classList.remove(
-                    "visible"
-                );
-
-            }
-
-
-            /* ======================================
-               OPEN
-            ====================================== */
-
-            document.getElementById(
-                "overlay"
-            ).classList.add(
-                "active"
-            );
-
-
-            document.body.style.overflow =
-                "hidden";
-
-        }
-
-
-        /* ==========================================
-           CLOSE LETTER
-        ========================================== */
-
-        function closeLetter() {
-
-
-            const overlay =
-                document.getElementById(
-                    "overlay"
-                );
-
-
-            overlay.classList.remove(
-                "active"
-            );
-
-
-            document.body.style.overflow =
-                "";
-
-        }
-
-
-        /* ==========================================
-           CLICK OUTSIDE LETTER
-        ========================================== */
-
-        document
-            .getElementById("overlay")
-            .addEventListener(
-                "click",
-                function(event) {
-
-                    if (
-                        event.target === this
-                    ) {
-
-                        closeLetter();
-
-                    }
-
-                }
-            );
-
-
-        /* ==========================================
-           ESC KEY
-        ========================================== */
-
-        document.addEventListener(
-            "keydown",
-            function(event) {
-
-                if (
-                    event.key === "Escape"
-                ) {
-
-                    closeLetter();
-
-                }
-
-            }
-        );
-
-
-        /* ==========================================
-           FLOATING BACKGROUND ELEMENTS
-        ========================================== */
-
-        function createFloating() {
-
-
-            const item =
-                document.createElement(
-                    "div"
-                );
-
-
-            item.className =
-                "floating";
-
-
-            item.textContent =
-                Math.random() > 0.5
-                    ? "♡"
-                    : "✦";
-
-
-            item.style.left =
-                Math.random() * 100 +
-                "%";
-
-
-            item.style.fontSize =
-                10 +
-                Math.random() * 20 +
-                "px";
-
-
-            item.style.animationDuration =
-                12 +
-                Math.random() * 15 +
-                "s";
-
-
-            item.style.animationDelay =
-                Math.random() * 5 +
-                "s";
-
-
-            document
-                .querySelector(
-                    ".background"
-                )
-                .appendChild(
-                    item
-                );
-
-
-            setTimeout(
-                function() {
-
-                    item.remove();
-
-                },
-                30000
-            );
-
-        }
-
-
-        /* Initial floating elements */
-
-        for (
-            let i = 0;
-            i < 15;
-            i++
-        ) {
-
-            createFloating();
-
-        }
-
-
-        /* Keep creating them */
-
-        setInterval(
-            createFloating,
-            2500
-        );
-
-        /* ==========================================
+/* =========================================================
    OPENING BACKGROUND MUSIC
-========================================== */
+========================================================= */
 
-const openingMusic =
-    new Audio("music/Goodness of God - piano instrumental cover with lyrics.mp3");
-
+const openingMusic = new Audio("music/Goodness of God - piano instrumental cover with lyrics.mp3");
 
 openingMusic.loop = true;
+openingMusic.volume = 0.22;
 
-openingMusic.volume = 0.25;
-
-
-/* ==========================================
-   FADE OPENING MUSIC
-========================================== */
-
-function fadeOutOpeningMusic() {
-
-    const fade =
-        setInterval(function() {
-
-            if (
-                openingMusic.volume > 0.03
-            ) {
-
-                openingMusic.volume -= 0.03;
-
-            }
-
-            else {
-
-                openingMusic.volume = 0;
-
-                openingMusic.pause();
-
-                openingMusic.currentTime = 0;
-
-                clearInterval(fade);
-
-            }
-
-        }, 100);
-
-}
+let openingMusicStarted = false;
+let openingMusicFading = false;
+let openingFadeTimer = null;
 
 
-/* ==========================================
+/* =========================================================
    START OPENING MUSIC
-========================================== */
+========================================================= */
 
 function startOpeningMusic() {
 
-    openingMusic.volume = 0.25;
+    if (openingMusicStarted || openingMusicFading) {
+        return;
+    }
 
-    openingMusic.play().catch(
-        function() {
+    openingMusic.volume = 0.22;
 
-            console.log(
-                "Music will start after user interaction."
-            );
+    openingMusic
+        .play()
+        .then(function () {
 
-        }
-    );
+            openingMusicStarted = true;
+
+        })
+        .catch(function () {
+
+            /*
+             * Browser blocked autoplay.
+             * The music will be attempted again
+             * after the user's first interaction.
+             */
+
+            openingMusicStarted = false;
+
+        });
 
 }
 
 
-/* ==========================================
-   START MUSIC AFTER FIRST INTERACTION
-========================================== */
+/* =========================================================
+   ATTEMPT MUSIC WHEN PAGE LOADS
+========================================================= */
+
+window.addEventListener("load", function () {
+
+    startOpeningMusic();
+
+});
+
+
+/* =========================================================
+   START MUSIC BEFORE THE USER CLICKS AN ENVELOPE
+========================================================= */
+
+/*
+ * Capture phase is important here.
+ *
+ * Your envelope buttons use:
+ *
+ * onclick="openLetter('bad-day')"
+ *
+ * This listener runs BEFORE that onclick,
+ * allowing the browser to treat the interaction
+ * as permission to play audio.
+ */
 
 document.addEventListener(
-    "click",
-    function startMusicOnce() {
+    "pointerdown",
+    function () {
 
         startOpeningMusic();
 
-        document.removeEventListener(
-            "click",
-            startMusicOnce
-        );
-
     },
-    { once: true }
+    true
 );
 
 
-/* ==========================================
-   MODIFY OPEN LETTER
-========================================== */
+/* =========================================================
+   FADE OUT OPENING MUSIC
+========================================================= */
 
-const originalOpenLetter =
-    window.openLetter;
+function fadeOutOpeningMusic() {
+
+    if (
+        openingMusic.paused &&
+        !openingMusicStarted
+    ) {
+        return;
+    }
+
+    openingMusicFading = true;
+
+    clearInterval(openingFadeTimer);
+
+    openingFadeTimer = setInterval(function () {
+
+        if (openingMusic.volume > 0.03) {
+
+            openingMusic.volume = Math.max(
+                0,
+                openingMusic.volume - 0.03
+            );
+
+        } else {
+
+            clearInterval(openingFadeTimer);
+
+            openingMusic.pause();
+
+            openingMusic.currentTime = 0;
+
+            openingMusic.volume = 0.22;
+
+            openingMusicStarted = false;
+
+            openingMusicFading = false;
+
+        }
+
+    }, 100);
+
+}
 
 
-window.openLetter =
-    function(id) {
+/* =========================================================
+   OPEN LETTER
+========================================================= */
 
-        fadeOutOpeningMusic();
+function openLetter(id) {
 
-        originalOpenLetter(id);
+    const letter = letters[id];
 
-    };
+    if (!letter) {
+        return;
+    }
 
+
+    /*
+     * Stop the opening background music
+     */
+
+    fadeOutOpeningMusic();
+
+
+    /*
+     * LETTER INFORMATION
+     */
+
+    document.getElementById("letterIcon").textContent =
+        letter.icon;
+
+    document.getElementById("letterSmall").textContent =
+        letter.small;
+
+    document.getElementById("letterTitle").textContent =
+        letter.title;
+
+    document.getElementById("letterMessage").textContent =
+        letter.message;
+
+
+    /* =====================================================
+       PHOTO
+    ===================================================== */
+
+    const photo =
+        document.getElementById("memoryPhoto");
+
+    if (letter.photo) {
+
+        photo.src = letter.photo;
+
+        photo.classList.add("visible");
+
+    } else {
+
+        photo.src = "";
+
+        photo.classList.remove("visible");
+
+    }
+
+
+    /* =====================================================
+       LETTER MUSIC
+    ===================================================== */
+
+    /*
+     * Stop whatever letter song was playing
+     */
+
+    songPlayer.pause();
+
+    songPlayer.currentTime = 0;
+
+
+    if (letter.song) {
+
+        songPlayer.src = letter.song;
+
+        songPlayer.volume = 0.35;
+
+        songBox.classList.add("visible");
+
+
+        /*
+         * Play the letter's song.
+         *
+         * Because openLetter() is triggered by
+         * the user's click, the browser normally
+         * allows this to play automatically.
+         */
+
+        songPlayer
+            .play()
+            .catch(function () {
+
+                console.log(
+                    "Letter music requires user interaction."
+                );
+
+            });
+
+    } else {
+
+        songPlayer.src = "";
+
+        songBox.classList.remove("visible");
+
+    }
+
+
+    /* =====================================================
+       SHOW POPUP
+    ===================================================== */
+
+    overlay.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+/* =========================================================
+   CLOSE LETTER
+========================================================= */
+
+function closeLetter() {
+
+    /*
+     * Stop the letter music
+     */
+
+    songPlayer.pause();
+
+    songPlayer.currentTime = 0;
+
+
+    /*
+     * Remove the popup
+     */
+
+    overlay.classList.remove("active");
+
+
+    /*
+     * Restore page scrolling
+     */
+
+    document.body.style.overflow = "";
+
+}
+
+
+/* =========================================================
+   CLOSE WHEN CLICKING OUTSIDE THE LETTER
+========================================================= */
+
+overlay.addEventListener(
+    "click",
+    function (event) {
+
+        if (event.target === overlay) {
+
+            closeLetter();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   ESCAPE KEY
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (
+            event.key === "Escape" &&
+            overlay.classList.contains("active")
+        ) {
+
+            closeLetter();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   FLOATING BACKGROUND ELEMENTS
+========================================================= */
+
+function createFloatingElement() {
+
+    const element =
+        document.createElement("div");
+
+    element.className = "floating-heart";
+
+    element.textContent =
+        Math.random() > 0.5 ? "❤️" : "✨";
+
+    element.style.left =
+        Math.random() * 100 + "%";
+
+    element.style.animationDuration =
+        (Math.random() * 5 + 5) + "s";
+
+    element.style.fontSize =
+        (Math.random() * 12 + 12) + "px";
+
+    document.body.appendChild(element);
+
+
+    setTimeout(function () {
+
+        element.remove();
+
+    }, 10000);
+
+}
+
+
+/* =========================================================
+   CREATE FLOATING ELEMENTS
+========================================================= */
+
+setInterval(
+    createFloatingElement,
+    2500
+);
+
+
+/* =========================================================
+   INITIAL FLOATING ELEMENTS
+========================================================= */
+
+for (let i = 0; i < 3; i++) {
+
+    setTimeout(
+        createFloatingElement,
+        i * 800
+    );
+
+}
     </script>
 
 </body>
